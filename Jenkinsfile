@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage("demo-test"){
             steps{
+                git branch: 'main', url: 'https://github.com/coolgourav147/spring-boot-war-example'
                 sh 'mvn test'
             }
         }
